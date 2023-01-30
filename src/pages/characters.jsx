@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { getCharacters } from '../services/api-calls'
+import { Link } from 'react-router-dom'
 
 const Characters = () => {
   const [characters, setCharacters] = useState([])
@@ -8,18 +9,19 @@ const Characters = () => {
     const fetchCharacters = async () => {
       const characterData = await getCharacters()
       setCharacters(characterData.data)
+      console.log(characterData.data)
     }
-    console.log(CharacterData)
+    fetchCharacters()
   }, [])
 
   return (
     <>
-      <h1>Who is your favorite character?</h1>
+      <h1>Do you know about your favorite character?</h1>
       {characters.length ?
         <>
           {characters.map((character, idx) =>
             <div key={idx}>
-              {character.name}
+              <Link to="/details" state={{character}} key={character.id}>{character.name}</Link>
             </div>
           )}
         </>

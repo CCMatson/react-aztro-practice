@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <header>
       {/* <Link to="/">Signs</Link> */}
-			<Link to="/characters">Characters</Link>
+			<h1>50 Disney Characters</h1>
     </header>
   );
 };

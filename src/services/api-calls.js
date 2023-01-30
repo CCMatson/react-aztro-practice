@@ -9,3 +9,8 @@ export async function getDetails(apiUrl){
   const res = await fetch(`${apiUrl}`)
   return res.json()
 }
+
+export async function charSearch (formData){
+  const res = await fetch(`${baseUrl}/character?name=${formData.query}`)
+  return res.json()
+}

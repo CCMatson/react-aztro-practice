@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <header>
-      {/* <Link to="/">Signs</Link> */}
+      <Link to="/search">Search</Link>
 			<h1>50 Disney Characters</h1>
+
     </header>
   );
 };

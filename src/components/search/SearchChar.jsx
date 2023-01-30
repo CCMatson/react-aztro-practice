@@ -20,7 +20,7 @@ const SearchChar = () => {
       <>
       {chars.map((char,idx) => 
         <div key={idx} className='search-details'>
-          {char.name} start in {char.films[0]} 
+          {char.name} stars in {char.films[0]} 
           {/* {char.enemies.length ?
           <>
           <h1>  Their enemeies are {char.enemies}    </h1>

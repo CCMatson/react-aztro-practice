@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+header {
+  background-color: beige;
+}
+
+.search-details{
+  margin: 10px;
+  border: 2px solid green;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

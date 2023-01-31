@@ -4,7 +4,8 @@ import { Route, Routes } from 'react-router-dom';
 import Characters from './pages/characters';
 import CharacterDetails from './pages/characterDetails'
 import SearchChar from './components/search/SearchChar';
-import CharDeets from './components/search/CharDeets'
+// import CharDeets from './components/search/CharDeets'
+// import Games from './components/search/Games'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Route path='/' element={<Characters/>}/>
         <Route path='/details' element={<CharacterDetails/>}/>
         <Route path="/search" element={<SearchChar/>}/>
-        <Route path="/char/:charName" element={< CharDeets/>}/>
+        {/* <Route path="/search/:charName" element={< CharDeets/>}/>
+      <Route path="/games" element={<Games/>}/> */}
       </Routes>
 
     </div>

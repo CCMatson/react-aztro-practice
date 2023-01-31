@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import SearchForm from '../SearchForm/SearchForm';
 import { charSearch } from '../../services/api-calls';
-import CharCard from './charCard';
+import CharCard from './CharCard';
+import { Link } from 'react-router-dom';
 
 const SearchChar = () => {
   const [chars, setChars] = useState([])
@@ -18,9 +19,11 @@ const SearchChar = () => {
       <SearchForm handleCharSearch={handleCharSearch}/>
       {chars.length ?
       <>
-      {chars.map((char,idx) => 
-        <div key={idx} className='search-details'>
+      {chars.map((char, _id) => 
+        <div key={_id} className='search-details'>
           {char.name} stars in {char.films[0]} 
+
+          <p>The character id is <CharCard key={_id} char={char._id}/> </p>
           {/* {char.enemies.length ?
           <>
           <h1>  Their enemeies are {char.enemies}    </h1>

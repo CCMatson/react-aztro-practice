@@ -19,7 +19,8 @@ const SearchForm = (props) => {
         <form onSubmit={handleSubmit}>
           <input name="query" type="text" autoComplete="off"
           value={formData.query}
-          onChange={handleChange}/>
+          onChange={handleChange}
+          placeholder="Enter a character"/>
           <button type="submit">Search</button>
         </form>
       </div>

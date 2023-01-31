@@ -4,7 +4,7 @@ import SearchForm from '../SearchForm/SearchForm';
 const CharCard = (props) => {
   return ( 
     <>
-      <Link to={`/search/${props.char.idx}`}>
+      <Link to={`/search/${props.char}`}>
         {props.char}
       </Link>
       <br/>

@@ -15,7 +15,7 @@ export async function charSearch (formData){
   return res.json()
 }
 
-export async function getCharDeets(charName) {
-  const res = await fetch(`${baseUrl}/character?name=${charName}`)
-  return res.json()
-}
+// export async function getCharDeets(charName) {
+//   const res = await fetch(`${baseUrl}/characters/${charName}`)
+//   return res.json()
+// }
